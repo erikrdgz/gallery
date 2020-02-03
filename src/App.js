@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Gallery from './components/Gallery';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className="text-center wrapper">
+        <div className="mb-3">
+        <h1 >Unsplash Masonry Grid</h1>
+        <p>A React App that fetches images from Unsplash API</p>
+        </div> 
+        <Gallery/>
+      </div>
+    );
+  }
 }
 
 export default App;
